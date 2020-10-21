@@ -1,0 +1,183 @@
+@CHARSET "UTF-8";
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+/* style the container */
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid white;
+/* background-color: #f2f2f2; */
+  padding: 20px 0 30px 0;
+  margin-left: 300px;
+  margin-top: 100px;} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */}
+
+input:hover,
+.btn:hover {
+  opacity: 1;}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: transparent;
+  color: #3B5998;}
+
+.twitter {
+  background-color: transparent;
+  color: #55ACEE;}
+
+.google {
+  background-color: transparent;
+  color: #dd4b39;}
+
+ /* style the submit button */
+input[type=submit] {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 30px;}
+
+input[type=submit]:hover {color: red;} 
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  padding: 0 50px;
+  margin-top: 6px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {display: none;}
+
+/* bottom container */
+ .bottom-container {
+  text-align: center;
+  background-color: #666;
+  width: 900px;
+  border-radius: 0px 0px 4px 4px;
+  margin: 30px 50px;} 
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;}
+  /* hide the vertical line */
+  .vl {
+    display: none;  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;}
+}
+
+.su {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: left;}
+
+.su span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;}
+
+.su span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;}
+
+.su:hover span {padding-right: 25px;}
+
+.su:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #5D8AA6;}
+
+.button {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 90px;
+  clear: both;}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;}
+
+.button:hover span {padding-right: 25px;}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #5D8AA6;}

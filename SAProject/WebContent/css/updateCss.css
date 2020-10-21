@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 20px 0 30px 0;
+  margin-left: 300px;
+  margin-top: 100px;} 
+  
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;}
+
+/* Set a style for all buttons */
+/* button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+} */
+
+.su {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;}
+
+.su span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;}
+
+.su span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;}
+
+.su:hover span {padding-right: 25px;}
+
+.su:hover span:after {
+  opacity: 1;
+  right: 0;
+   color: #5D8AA6;}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;}
+
+/* Add padding to container elements */
+.container {padding: 16px;}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;}
+}
+
+.dup1 {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  width:110px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  text-align:center;
+  color: #0D4373;}
+
+.dup1:hover {
+  background: #023373;
+  color: white;}
+
+.button {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 90px;
+  clear: both;}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;}
+
+.button:hover span {padding-right: 25px;}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #5D8AA6;}

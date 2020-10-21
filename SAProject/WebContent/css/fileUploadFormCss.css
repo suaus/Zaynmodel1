@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+#uploadFormArea{
+	margin: auto;
+	width: 350px;
+	border: 1px solid black;}
+
+.td_title{
+	font-size: xx-large;
+	text-align: center;}

@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+#de{
+  margin-top: 100px;
+  margin-bottom:100px;
+  width: 700px;
+  margin-left: 500px;}
+
+.su1 {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left:  400px;}
+
+.su1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;}
+
+.su1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;}
+
+.su1:hover span {padding-right: 25px;}
+
+.su1:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #5D8AA6;}

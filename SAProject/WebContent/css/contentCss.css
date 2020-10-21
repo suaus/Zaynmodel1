@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+#notice{
+  border: 1px solid red;
+  width: 900px;
+  /* margin-left:  400px;
+  margin-right: 300px; */}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50px;
+  margin-left: 25%;}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;}
+
+tr:nth-child(even) {
+  background-color: #dddddd;}
+tr:nth-child(odd) {
+  background-color: #f2f2f2;}
+
+.su1,.su2,.su3,.su4 {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px 20px 10px 20px;
+  transition: all 0.5s;
+  cursor: pointer;}
+
+#btnn{
+  margin-left: 850px;
+  margin-top: 200px;}
+
+.su1:HOVER {color: #5D8AA6;}
+.su2:HOVER {color: #5D8AA6;}
+.su3:HOVER {color: #5D8AA6;}
+.su4:HOVER {color: #5D8AA6;}

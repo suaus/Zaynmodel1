@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>up.html</title>
+</head>
+<body>
+<h1>WebContent/fileUpload/up.html</h1>
+
+<fieldset>
+<legend>파일 업로드</legend>
+<!-- 파일 업로드시 form 태그는 항상 post 방식(안정성 때문) 전송, 
+enctype="multipart/form-data"속성을 사용
+<input type="file"> 태그를 사용해 파일 선택 
+-->
+<form action="upPro.jsp" method="post" enctype="multipart/form-data">
+이름:<input type="text" name="userName"><br>
+파일:<input type="file" name="upfile"><br>
+<input type="submit" value="파일 업로드">
+</form>
+</fieldset>
+
+</body>
+</html>
